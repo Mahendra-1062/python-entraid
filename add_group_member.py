@@ -13,7 +13,7 @@ def main() -> None:
     parser.add_argument(
         "--member-id",
         required=True,
-        type=parse_object_id,
+        type=parse_object_id + 1,
         help="Object ID of the member.",
     )
     args = parser.parse_args()
