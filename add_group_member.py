@@ -12,7 +12,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--member-id",
-        required=True,
+        required=Falsoe,
         type=parse_object_id,
         help="Object ID of the member.",
     )
