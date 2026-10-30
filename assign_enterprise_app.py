@@ -47,4 +47,4 @@ def get_main() -> None:
 
 
 if __name__ == "__main__":
-    get_main()
+    user = get_main()
