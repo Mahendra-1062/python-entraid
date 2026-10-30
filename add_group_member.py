@@ -8,7 +8,7 @@ def main() -> None:
         description="Add a user, group, or service principal to a group."
     )
     parser.add_argument(
-        "--group-id", required=True, type=parse_object_id, help="Object ID of the group."
+        "--group-id", required=False, type=parse_object_id, help="Object ID of the group."
     )
     parser.add_argument(
         "--member-id",
