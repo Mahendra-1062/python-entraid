@@ -50,7 +50,10 @@ def assign_enterprise_app() -> None:
 
 def main() -> None:
     validate = assign_enterprise_app()
-
+    if not validate.get("id"):
+        raise RuntimeError(
+            "Assignment failed. Check that the service principal and principal IDs are correct."
+        )
 
 if __name__ == "__main__":
     main()
