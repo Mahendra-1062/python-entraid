@@ -45,9 +45,11 @@ def assign_enterprise_app() -> None:
     )
     print(json.dumps(assignment, indent=2))
 
+    return assignment
+
 
 def main() -> None:
-    assign_enterprise_app()
+    validate = assign_enterprise_app()
 
 
 if __name__ == "__main__":
