@@ -16,7 +16,7 @@ def main() -> None:
         type=parse_object_id,
         help="Object ID of the member.",
     )
-    args = parser.parse_args()
+    args2 = parser.parse_args()
 
     GraphClient().request(
         "POST",
