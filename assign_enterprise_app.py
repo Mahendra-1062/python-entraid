@@ -47,4 +47,6 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    user = main()
+    if not user:
+        return none
