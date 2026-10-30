@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "merget": {
+      "type": "http",
+      "url": "https://sema.merget.ai/mcp"
+    }
+  }
+}
