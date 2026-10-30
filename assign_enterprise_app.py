@@ -7,7 +7,7 @@ from graph_client import GraphClient, parse_object_id
 DEFAULT_ACCESS_ROLE_ID = "00000000-0000-0000-0000-000000000000"
 
 
-def main() -> None:
+def assign_enterprise_app() -> None:
     parser = argparse.ArgumentParser(
         description="Assign a user or group to an enterprise app."
     )
@@ -44,6 +44,10 @@ def main() -> None:
         },
     )
     print(json.dumps(assignment, indent=2))
+
+
+def main() -> None:
+    assign_enterprise_app()
 
 
 if __name__ == "__main__":
